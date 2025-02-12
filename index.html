@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Περιεκτικότητα Διαλύματος (%w/v)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Περιεκτικότητα Διαλύματος (%w/v)</h1>
+        <p>Η περιεκτικότητα διαλύματος στα εκατό βάρος προς όγκο εκφράζει τη μάζα σε g της διαλυμένης ουσίας που περιέχεται σε 100 ml διαλύματος. Συμβολίζεται %w/v.</p>
+        
+        <button onclick="startQuiz()">Ξεκινήστε το κουίζ</button>
+
+        <div id="quiz-container" style="display: none;">
+            <form id="quizForm">
+                <p>1. Υδατικό διάλυμα χλωριούχου νατρίου 3% w/v σημαίνει ότι:</p>
+                <label><input type="radio" name="q1" value="α"> α. Σε 100 g διαλύματος έχουμε διαλύσει 3 g χλωριούχου νατρίου</label><br>
+                <label><input type="radio" name="q1" value="β"> β. Σε 100 ml διαλύματος υπάρχουν 3 g χλωριούχου νατρίου</label><br>
+                <label><input type="radio" name="q1" value="γ"> γ. Σε 100 ml διαλύτη έχουμε διαλύσει 3 g χλωριούχου νατρίου</label><br>
+
+                <p>2. Σε 200 ml χυμό περιέχονται 20 g ζάχαρη. Η περιεκτικότητα του χυμού σε ζάχαρη %w/v, είναι:</p>
+                <label><input type="radio" name="q2" value="α"> α. 11%</label><br>
+                <label><input type="radio" name="q2" value="β"> β. 10%</label><br>
+                <label><input type="radio" name="q2" value="γ"> γ. 9%</label><br>
+
+                <p>3. Διαλύουμε 10 g ζάχαρη σε νερό και προκύπτει διάλυμα 100ml. Η περιεκτικότητα του ζαχαρόνερου σε ζάχαρη %w/v είναι:</p>
+                <label><input type="radio" name="q3" value="α"> α. 11,11%</label><br>
+                <label><input type="radio" name="q3" value="β"> β. 9%</label><br>
+                <label><input type="radio" name="q3" value="γ"> γ. 10%</label><br>
+
+                <p>4. Περιεκτικότητα ζαχαρόνερου σε ζάχαρη 22%w/v σημαίνει ότι ένα ποτήρι διαλύματος 100 ml περιέχει:</p>
+                <label><input type="radio" name="q4" value="α"> α. 22 ml ζάχαρης</label><br>
+                <label><input type="radio" name="q4" value="β"> β. 100 g ζάχαρης</label><br>
+                <label><input type="radio" name="q4" value="γ"> γ. 22 g ζάχαρης</label><br>
+
+                <p>5. Για να παρασκευάσουμε ζαχαρόνερο με 50%w/v διαλύουμε:</p>
+                <label><input type="radio" name="q5" value="α"> α. 50 g ζάχαρη σε 100 ml νερού</label><br>
+                <label><input type="radio" name="q5" value="β"> β. 50 g ζάχαρη σε νερό ώστε ο τελικός όγκος του διαλύματος να είναι 100ml</label><br>
+                <label><input type="radio" name="q5" value="γ"> γ. 50g ζάχαρη σε 50 g νερού</label><br>
+
+                <p>6. Για να παρασκευάσουμε αλατόνερο με 15%w/v διαλύουμε:</p>
+                <label><input type="radio" name="q6" value="α"> α. 15 g αλάτι σε 100 ml νερού</label><br>
+                <label><input type="radio" name="q6" value="β"> β. 10 g αλάτι σε 90 g νερού</label><br>
+                <label><input type="radio" name="q6" value="γ"> γ. 30 g αλάτι σε νερό ώστε ο τελικός όγκος του διαλύματος να είναι 200ml</label><br>
+
+                <p>7. Περιεκτικότητα %w/v είναι από τα παρακάτω:</p>
+                <label><input type="radio" name="q7" value="α"> α. 5g ζάχαρη σε 100ml ζαχαρόνερου</label><br>
+                <label><input type="radio" name="q7" value="β"> β. 8g αλάτι σε ένα κιλό νερού</label><br>
+                <label><input type="radio" name="q7" value="γ"> γ. 3g αλάτι σε 100g αλατόνερου</label><br>
+
+                <p>8. Ένα υδατικό διάλυμα 100 ml περιέχει 5 g ζάχαρη και 5 g αλάτι. Το διάλυμα περιέχει:</p>
+                <label><input type="radio" name="q8" value="α"> α. 10% w/v ζάχαρη</label><br>
+                <label><input type="radio" name="q8" value="β"> β. 5% w/v αλάτι</label><br>
+                <label><input type="radio" name="q8" value="γ"> γ. 5% w/w ζάχαρη</label><br>
+
+                <p>9. Ένα λίτρο γάλα έχει 40 g λιπαρά. Άρα η περιεκτικότητα σε λιπαρά είναι:</p>
+                <label><input type="radio" name="q9" value="α"> α. 40% w/v</label><br>
+                <label><input type="radio" name="q9" value="β"> β. 4% w/w</label><br>
+                <label><input type="radio" name="q9" value="γ"> γ. 4% w/v</label><br>
+
+                <p>10. Αν πιεις ένα ποτήρι γάλα (200 ml) 2%w/v σε λιπαρά, πόσα g λιπαρά κατανάλωσες;</p>
+                <label><input type="radio" name="q10" value="α"> α. 4g</label><br>
+                <label><input type="radio" name="q10" value="β"> β. 2g</label><br>
+                <label><input type="radio" name="q10" value="γ"> γ. 1g</label><br>
+
+                <button type="button" onclick="submitQuiz()">Υποβολή</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
